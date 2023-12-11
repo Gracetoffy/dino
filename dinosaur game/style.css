@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(228, 228, 228);
+
+    font-family: cursive,sans-serif;
+}
+
+.cloud{
+    width: 50px;
+    margin-right: 20px;
+    left: 900px;
+       
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    animation: 4s linear 0.2s infinite  clouds;
+}
+.cloud1{
+    width: 50px;
+    margin-right: 20px;
+    left: 800px;
+       
+    height: 40px;
+    position: absolute;
+    top: 240px;
+    animation: 3.2s linear 0.2s infinite  clouds;
+}
+
+.cloud2{
+    width: 50px;
+    margin-right: 20px;
+    left: 400px;
+       
+    height: 40px;
+    position: absolute;
+    top: 230px;
+    animation: 3.5s linear 0.2s infinite  clouds1;
+}
+@keyframes clouds{
+    0%{left:1000px}
+    30%{left: 800px;}
+    70%{left: 500px;}
+    100%{left: 380px;}
+}
+@keyframes clouds1{
+    0%{left:900px}
+    30%{left: 750px;}
+    70%{left: 600px;}
+    100%{left: 380px;}
+}
+
+#game{
+    width: 800px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 150px auto;
+background-color: rgb(0, 187, 255);
+}
+
+#score{
+    position: absolute ;
+    left: 1000px;
+    top: 170px;
+    font-size: 20px;
+    font-family: cursive,sans-serif;
+    color: red;
+}
+.HIscore{
+    position: absolute ;
+    left: 870px;
+    top: 170px;
+    font-size: 20px;
+    font-family: cursive,sans-serif;
+    color: red;
+
+}
+
+
+.loseMsg{
+    position: absolute;
+    margin:94px 290px ;
+    text-align: center;
+    font-weight: 700;
+    font-family: cursive, sans-serif ;
+     color: red;
+     display: none;       
+}
+
+#character{
+    width: 50px;
+    height: 50px;
+   
+    position: relative;
+    top: 200px;
+    left: 20px;
+    
+}
+
+#block{
+    width: 30px;
+    height: 30px;
+    background-color:brown;
+    position: relative;
+    top: 165px;
+    left:550px;
+    animation: 1.7s linear 0s infinite normal none running block;
+
+}
+.animate{
+    animation: jump 500ms  ;
+}
+
+@keyframes block {
+    0%{left:550px;}
+    100%{left:-30px}
+}
+
+@keyframes jump {
+    0%{top: 200px;}
+    30%{top: 150px;}
+    70%{top: 150px;}
+    100%{top: 200px;}
+    
+}
